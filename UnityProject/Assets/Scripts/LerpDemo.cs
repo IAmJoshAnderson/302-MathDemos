@@ -30,7 +30,7 @@ public class LerpDemo : MonoBehaviour
 
         Vector3 pos = Vector3.Lerp(pointA.position, pointB.position, percent);
 
-        Quaternion rot = Animmath.Lerp(pointA.rotation, pointB.rotation, percent);
+        Quaternion rot = AnimMath.Lerp(pointA.rotation, pointB.rotation, percent);
 
         transform.position = pos;
         transform.rotation = rot;

@@ -18,7 +18,7 @@ public class EaseDemo : MonoBehaviour
         //transform.position = Vector3.Lerp(transform.position, target.position, Time.deltaTime);
 
 
-        transform.position = AnimMath.Ease();
+        transform.position = AnimMath.Ease(transform.position, target.position, percentLeftAfter1Second);
 
 
     }
