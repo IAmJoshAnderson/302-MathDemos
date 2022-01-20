@@ -45,10 +45,10 @@ public static class AnimMath
 
         Quaternion rot = Quaternion.identity;
 
-        rot.x - Lerp(a.x, b.x, p, allowExtrapolation);
-        rot.y - Lerp(a.y, b.y, p, allowExtrapolation);
-        rot.z - Lerp(a.z, b.z, p, allowExtrapolation);
-        rot.w - Lerp(a.w, b.w, p, allowExtrapolation);
+        rot.x = Lerp(a.x, b.x, p, allowExtrapolation);
+        rot.y = Lerp(a.y, b.y, p, allowExtrapolation);
+        rot.z = Lerp(a.z, b.z, p, allowExtrapolation);
+        rot.w = Lerp(a.w, b.w, p, allowExtrapolation);
 
         return rot;
     }
