@@ -27,6 +27,8 @@ public class LookAtCameraRig : MonoBehaviour
         targetPosition.Normalize();
         targetPosition *= desiredDistance;
 
+        targetPosition += target.position;
+
         transform.position = AnimMath.Ease(transform.position, targetPosition, .01f);
 
 

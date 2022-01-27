@@ -250,6 +250,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b767a7b7b04e8ca4db053dcf4fdab632, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeMultiplier: 1
+  timeOffset: 0
   orbitCenter: {fileID: 1722434485}
   radius: 6.7
   pathResolution: 32
@@ -463,6 +465,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b767a7b7b04e8ca4db053dcf4fdab632, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeMultiplier: 1
+  timeOffset: 0
   orbitCenter: {fileID: 1722434485}
   radius: 9.2
   pathResolution: 32
@@ -773,6 +777,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b767a7b7b04e8ca4db053dcf4fdab632, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeMultiplier: 1
+  timeOffset: 0
   orbitCenter: {fileID: 1722434485}
   radius: 3.5
   pathResolution: 32
@@ -1001,6 +1007,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b767a7b7b04e8ca4db053dcf4fdab632, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeMultiplier: 1
+  timeOffset: 0
   orbitCenter: {fileID: 1722434485}
   radius: 48.3
   pathResolution: 32
@@ -1199,6 +1207,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b767a7b7b04e8ca4db053dcf4fdab632, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeMultiplier: 1
+  timeOffset: 0
   orbitCenter: {fileID: 1722434485}
   radius: 14.1
   pathResolution: 32
@@ -1391,6 +1401,7 @@ GameObject:
   - component: {fileID: 2050569741}
   - component: {fileID: 2050569740}
   - component: {fileID: 2050569739}
+  - component: {fileID: 2050569742}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1464,3 +1475,16 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
+--- !u!114 &2050569742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2050569738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39e1c52f5f27478418770b4bce1b5e0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeScale: 1
