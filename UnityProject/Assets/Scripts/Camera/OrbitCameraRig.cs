@@ -33,10 +33,10 @@ public class OrbitCameraRig : MonoBehaviour
         // === rotation: ===
 
        float mx = Input.GetAxis("Mouse X");
-        float my = Input.GetAxis("Mouse X");
+        float my = Input.GetAxis("Mouse Y");
 
         yaw += mx * mouseSensitivityX;
-        pitch += mx * mouseSensitivityY;
+        pitch += my * mouseSensitivityY;
 
         // === dolly: ====
 
@@ -45,7 +45,7 @@ public class OrbitCameraRig : MonoBehaviour
         dis += scrollAmt.y * scrollSensitivity;
         dis = Mathf.Clamp(dis, 5, 50); // distance to which the camera can be moved back
 
-        float z = AnimMath.Ease(cam.transform.localPosition.z, -dis, .01f);
+        float z = AnimMath.Ease(cam.transform.localPosition.z, -dis, .01f, Time.deltaTime);
 
 
 
@@ -58,7 +58,7 @@ public class OrbitCameraRig : MonoBehaviour
         // transform.position = thingToLookAt.position;
 
         //outlays values from AnimMath Ease
-        transform.position = AnimMath.Ease(transform.position, thingToLookAt.position, .001f);
+        transform.position = AnimMath.Ease(transform.position, thingToLookAt.position, .001f, Time.deltaTime);
 
     }
 }
